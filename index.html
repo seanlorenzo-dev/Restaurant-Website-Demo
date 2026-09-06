@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harbor & Hearth — Filipino-Inspired Modern Restaurant (Concept Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">Harbor <span>&amp;</span> Hearth</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-primary nav-cta-mobile" data-open-modal>Reserve a Table</button>
+    </nav>
+    <button class="btn btn-primary nav-cta" data-open-modal>Reserve a Table</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80" alt="Warmly lit restaurant table set with shared dishes">
+  </div>
+  <div class="hero-content">
+    <p class="hero-kicker">Nueva Vista, Philippines</p>
+    <h1>Good food.<br>Great moments.</h1>
+    <p class="hero-sub">Gather around unforgettable flavors, warm hospitality, and dishes made to be shared.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+      <button class="btn btn-ghost" data-open-modal>Reserve a Table</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / EXPERIENCE -->
+<section class="about" id="story">
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="section-label">Our Story</p>
+      <h2>More than a meal.</h2>
+      <p class="about-text">From intimate dinners to lively family gatherings, Harbor &amp; Hearth is designed around good food, good company, and memorable moments. Every dish carries a bit of home &mdash; reimagined for the table you're sharing it at tonight.</p>
+    </div>
+    <div class="about-cards">
+      <div class="feature-card">
+        <span class="feature-icon">🍽️</span>
+        <h3>Signature Dishes</h3>
+        <p>Recipes rooted in tradition, plated with a modern hand.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎉</span>
+        <h3>Celebrations &amp; Events</h3>
+        <p>Birthdays, reunions, and everything worth toasting to.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">❤️</span>
+        <h3>Made With Care</h3>
+        <p>Ingredients sourced with intention, cooked with patience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <p class="section-label center">The Menu</p>
+  <h2 class="center">A table worth gathering around.</h2>
+
+  <div class="menu-tabs" id="menuTabs">
+    <button class="menu-tab active" data-cat="starters">Starters</button>
+    <button class="menu-tab" data-cat="mains">Main Course</button>
+    <button class="menu-tab" data-cat="grill">Grill</button>
+    <button class="menu-tab" data-cat="desserts">Desserts</button>
+  </div>
+
+  <div class="menu-list" id="menuList">
+
+    <div class="menu-item" data-cat="starters">
+      <div class="menu-item-info">
+        <h4>Crispy Garlic Shrimp</h4>
+        <p>Butterflied shrimp, toasted garlic, calamansi butter.</p>
+      </div>
+      <span class="menu-price">₱320</span>
+    </div>
+    <div class="menu-item" data-cat="starters">
+      <div class="menu-item-info">
+        <h4>Smoked Eggplant Dip</h4>
+        <p>Charred eggplant, coconut cream, crisp shallots.</p>
+      </div>
+      <span class="menu-price">₱260</span>
+    </div>
+
+    <div class="menu-item" data-cat="mains">
+      <div class="menu-item-info">
+        <h4>Harbor Seafood Platter</h4>
+        <p>Catch of the day, mussels, and shrimp in coconut broth.</p>
+      </div>
+      <span class="menu-price">₱680</span>
+    </div>
+    <div class="menu-item" data-cat="mains">
+      <div class="menu-item-info">
+        <h4>Braised Pork Adobo</h4>
+        <p>Slow-braised pork belly, vinegar-soy glaze, steamed rice.</p>
+      </div>
+      <span class="menu-price">₱420</span>
+    </div>
+
+    <div class="menu-item" data-cat="grill">
+      <div class="menu-item-info">
+        <h4>Charcoal Chicken</h4>
+        <p>Whole marinated chicken, charcoal-grilled, achara.</p>
+      </div>
+      <span class="menu-price">₱450</span>
+    </div>
+    <div class="menu-item" data-cat="grill">
+      <div class="menu-item-info">
+        <h4>Filipino BBQ Skewers</h4>
+        <p>Sweet-savory pork skewers, banana ketchup glaze.</p>
+      </div>
+      <span class="menu-price">₱300</span>
+    </div>
+
+    <div class="menu-item" data-cat="desserts">
+      <div class="menu-item-info">
+        <h4>Coconut Pandan Cake</h4>
+        <p>Pandan sponge, coconut cream, toasted macapuno.</p>
+      </div>
+      <span class="menu-price">₱220</span>
+    </div>
+    <div class="menu-item" data-cat="desserts">
+      <div class="menu-item-info">
+        <h4>Caramelized Banana Tart</h4>
+        <p>Saba banana, muscovado caramel, vanilla ice cream.</p>
+      </div>
+      <span class="menu-price">₱240</span>
+    </div>
+  </div>
+
+  <div class="menu-cta">
+    <button class="btn btn-outline" id="fullMenuBtn">View Full Menu</button>
+  </div>
+</section>
+
+<!-- FEATURED DISH -->
+<section class="feature-dish">
+  <div class="feature-dish-media">
+    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1400&q=80" alt="Harbor Seafood Platter with grilled seafood and herbs">
+  </div>
+  <div class="feature-dish-copy">
+    <p class="section-label">Signature</p>
+    <h2>Our signature, your new favorite.</h2>
+    <h3>Harbor Seafood Platter</h3>
+    <p>The day's catch, simmered in coconut broth with mussels and shrimp, finished with fresh herbs and a squeeze of calamansi. Built for the middle of the table.</p>
+    <div class="feature-dish-row">
+      <span class="menu-price large">₱680</span>
+      <button class="btn btn-primary" data-open-modal>Reserve to Try It</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <p class="section-label center">Gallery</p>
+  <h2 class="center">A feel for the place.</h2>
+  <div class="gallery-grid" id="galleryGrid">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Close-up of a plated seafood dish">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Warm restaurant interior with wooden tables">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80" alt="Outdoor dining terrace in the evening">
+    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80" alt="Family gathered around a shared dinner">
+    <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80" alt="Close-up food photography of a grilled dish">
+    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Craft drinks on a wooden bar">
+    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80" alt="Chef plating a dish in the kitchen">
+    <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=80" alt="Overhead view of a shared feast">
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events">
+  <p class="section-label center">Events</p>
+  <h2 class="center">Make it a celebration.</h2>
+  <div class="events-grid">
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Birthday celebration table">
+      <h3>Birthday Gatherings</h3>
+      <p>Celebrate with family and friends.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80" alt="Family dinner around a table">
+      <h3>Family Dinners</h3>
+      <p>Bring everyone together around the table.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80" alt="Private event setup with decorated tables">
+      <h3>Private Events</h3>
+      <p>Let us help make your special occasion memorable.</p>
+    </div>
+  </div>
+  <div class="menu-cta">
+    <button class="btn btn-outline" data-toast="Thanks for your interest! This is a demo — event planning isn't connected yet.">Plan an Event</button>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <p class="section-label center">Sample Testimonials</p>
+  <h2 class="center">What guests are saying</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Beautiful atmosphere and incredible food. We'll definitely be back."</p>
+      <span>— Maria R.</span>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"The seafood platter was easily the best thing we've had this year."</p>
+      <span>— Julian T.</span>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Perfect spot for our family's reunion dinner. Warm service, great food."</p>
+      <span>— Angela P.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / LOCATION -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="section-label">Visit Us</p>
+    <h2>Come hungry. Leave happy.</h2>
+    <div class="contact-details">
+      <div><span>📍</span> Nueva Vista, Philippines</div>
+      <div><span>🕐</span> 10:00 AM — 10:00 PM</div>
+      <div><span>📞</span> (000) 123-4567</div>
+      <div><span>✉️</span> hello@harborandhearth.example</div>
+    </div>
+    <div class="contact-actions">
+      <button class="btn btn-outline" data-toast="This is a demo — directions aren't connected to a real map yet.">Get Directions</button>
+      <button class="btn btn-outline" data-toast="This is a demo — calling isn't connected to a real line yet.">Call Us</button>
+      <button class="btn btn-primary" data-open-modal>Reserve a Table</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="footer-logo">Harbor &amp; Hearth</p>
+      <p class="footer-tagline">Good food. Great moments.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <p>Nueva Vista, Philippines</p>
+      <p>(000) 123-4567</p>
+      <p>hello@harborandhearth.example</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" data-toast="Demo only — social links aren't connected.">FB</a>
+        <a href="#" aria-label="Instagram" data-toast="Demo only — social links aren't connected.">IG</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-disclaimer">Sample Website Concept — Fictional Restaurant</p>
+</footer>
+
+<!-- RESERVATION MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle">Reserve a Table</h3>
+    <p class="modal-sub">This is a demo reservation form — nothing will be submitted.</p>
+    <form id="reserveForm">
+      <label>Name
+        <input type="text" required placeholder="Your name">
+      </label>
+      <div class="form-row">
+        <label>Date
+          <input type="date" required>
+        </label>
+        <label>Time
+          <input type="time" required>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Guests
+          <input type="number" min="1" max="20" value="2" required>
+        </label>
+        <label>Phone
+          <input type="tel" required placeholder="(000) 123-4567">
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">Request Reservation</button>
+    </form>
+  </div>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
